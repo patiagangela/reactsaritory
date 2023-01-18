@@ -18,12 +18,17 @@ import LineChart from './aaluis-admin-menu/charts/LineChart';
 import PieChart from './aaluis-admin-menu/charts/PieChart';
 import ProfileForm from './aaluis-admin-menu/otherpages/Profile';
 import Calendar from './aaluis-admin-menu/otherpages/Calendar';
+import landingPage from './pages/landing-page/Landing-page.jsx';
+import Sarisaristore from './aaangela-landingpage/Sarisaristore';
+
+
 
 function App() {
   return (
     <div className="app">
       <Routes>
           <Route path = '/' element = {<LandingPage/>}/>
+          <Route path = '/' element = {<Sarisaristore/>}/>
           <Route path = '/loginpage' element = {<LoginPage/>}/> 
           <Route path = '/registerpage' element = {<RegisterPage/>}/>
           <Route path = '/adminpage' element = {<AdminPage/>}/>
